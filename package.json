@@ -1,0 +1,38 @@
+{
+  "name": "oppo-lint",
+  "version": "1.0.0",
+  "description": "A Figma plugin to do lint stuff",
+  "keywords": [
+    "create-figma-plugin",
+    "figma",
+    "figma-plugin"
+  ],
+  "license": "MIT",
+  "author": "dingyi",
+  "dependencies": {
+    "@create-figma-plugin/ui": "latest",
+    "@create-figma-plugin/utilities": "latest",
+    "preact": "^10.5.12"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "latest",
+    "@create-figma-plugin/tsconfig": "latest",
+    "@figma/plugin-typings": "^1.16.1"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "build-figma-plugin",
+    "watch": "build-figma-plugin --watch",
+    "clean": "rimraf '*.log' build manifest.json 'src/**/*.scss.d.ts'",
+    "fix": "eslint --fix 'src/**/*.{ts,tsx}' && prettier --loglevel error --write package.json tsconfig.json",
+    "lint": "eslint 'src/**/*.{ts,tsx}'"
+  },
+  "figma-plugin": {
+    "id": "oppo-lint",
+    "name": "OPPO Lint",
+    "main": "main",
+    "ui": "ui"
+  }
+}
