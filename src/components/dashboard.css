@@ -1,0 +1,15 @@
+.container {
+  background-color: #F6F9FC;
+  padding: 16px 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8px;
+}
+.items {
+  background-color: #FFFFFF;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 6px -4px rgba(24, 39, 75, 0.12), 0 8px 8px -4px rgba(24, 39, 75, 0.08);
+  border-radius: 8px;
+}

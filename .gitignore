@@ -1,5 +1,6 @@
 .DS_Store
 *.log
+*.css.d.ts
 *.scss.d.ts
 build/
 manifest.json

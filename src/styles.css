@@ -1,0 +1,17 @@
+:root {
+  --border-radius-2: 2px;
+  --border-radius-6: 6px;
+  --box-shadow: 0 5px 17px rgba(0, 0, 0, 0.2), 0 2px 7px rgba(0, 0, 0, 0.15);
+  --color-white-bg: #FFFFFF;
+  --color-dashboard-bg: #F6F9FC;
+}
+
+.container {
+  background-color: var(--color-dashboard-bg);
+}
+
+.items {
+  background-color: var(--color-white-bg);
+  width: 100px;
+  height: 100px;
+}

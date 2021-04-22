@@ -32,7 +32,7 @@
   "figma-plugin": {
     "id": "oppo-lint",
     "name": "OPPO Lint",
-    "main": "main",
-    "ui": "ui"
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx"
   }
 }
