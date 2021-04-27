@@ -1,9 +1,7 @@
 /** @jsx h */
 import { emit } from '@create-figma-plugin/utilities'
 import {
-  Container,
   Text,
-  Columns,
   VerticalSpace,
   useForm,
   Button
