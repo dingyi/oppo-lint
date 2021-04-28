@@ -6,12 +6,9 @@
   --color-dashboard-bg: #F6F9FC;
 }
 
-.container {
-  background-color: var(--color-dashboard-bg);
-}
-
-.items {
-  background-color: var(--color-white-bg);
-  width: 100px;
-  height: 100px;
+.icons {
+  width: 32px;
+  height: 32px;
+  margin-top: -8px;
+  margin-bottom: 8px;
 }

@@ -23,8 +23,8 @@
     "src"
   ],
   "scripts": {
-    "build": "yarn run clean && build-figma-plugin",
-    "watch": "yarn run clean && build-figma-plugin --watch",
+    "build": "build-figma-plugin",
+    "watch": "build-figma-plugin --watch",
     "clean": "rimraf '*.log' build manifest.json 'src/**/*.scss.d.ts'",
     "fix": "eslint --fix 'src/**/*.{ts,tsx}' && prettier --loglevel error --write package.json tsconfig.json",
     "lint": "eslint 'src/**/*.{ts,tsx}'"
@@ -41,41 +41,40 @@
       "-",
       {
         "name": "中英文空格",
-        "main": "src//main.ts"
+        "main": "src/space-lint/main.ts"
       },
       {
         "name": "圆角规则",
-        "main": "src//main.ts"
+        "main": "src/corner-radius-lint/main.ts"
       },
       {
-        "name": "字体样式",
-        "main": "src//main.ts"
+        "name": "效果样式",
+        "main": "src/effect-lint/main.ts"
+      },
+      {
+        "name": "像素对齐",
+        "main": "src/pixel-perfect/main.ts"
       },
       {
         "name": "字体排版",
-        "main": "src//main.ts"
+        "main": "src/type-lint/main.ts"
       },
       {
         "name": "图层命名",
-        "main": "src/layes-naming/main.ts"
+        "main": "src/name-lint/main.ts"
       },
       {
-        "name": "固定文案",
-        "main": "src//main.ts"
+        "name": "专用词汇",
+        "main": "src/vocabulary-lint/main.ts"
       },
       {
         "name": "语法拼写",
-        "main": "src//main.ts"
+        "main": "src/spelling-lint/main.ts"
       },
       "-",
       {
         "name": "Reset",
-        "main": "src//main.ts"
-      },
-      "-",
-      {
-        "name": "关于",
-        "main": "src/about/main.ts"
+        "main": "src/reset-plugin/main.ts"
       }
     ],
     "relaunchButtons": {

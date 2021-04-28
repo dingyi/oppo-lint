@@ -1,8 +1,15 @@
 {
   "extends": "@create-figma-plugin/tsconfig",
   "compilerOptions": {
-    "resolveJsonModule": true,
     "strict": true,
+    "target": "ES2017",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "moduleResolution": "node",
     "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
-  }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
 }

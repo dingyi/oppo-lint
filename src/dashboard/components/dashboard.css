@@ -12,4 +12,11 @@
   height: 100px;
   box-shadow: 0 4px 6px -4px rgba(24, 39, 75, 0.12), 0 8px 8px -4px rgba(24, 39, 75, 0.08);
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  line-height: 2.4;
 }
