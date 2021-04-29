@@ -3,6 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "target": "ES2017",
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
