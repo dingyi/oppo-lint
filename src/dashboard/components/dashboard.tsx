@@ -2,15 +2,7 @@ import {
   Text,
   VerticalSpace,
 } from '@create-figma-plugin/ui'
-import {
-  Effect,
-  Layers,
-  Radius,
-  Space,
-  Spelling,
-  Type,
-  Vocabulary,
-} from '../../icons'
+import Icon from '../../icons'
 //import { emit, on } from '@create-figma-plugin/utilities'
 import { h, JSX } from 'preact'
 import styles from './dashboard.css'
@@ -20,31 +12,31 @@ export function Dashboard(props: { [key: string]: any }): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.items}>
-        <Space />
+        <Icon type="Space"/>
         <Text>中英文空格</Text>
       </div>
       <div className={styles.items}>
-        <Radius />
+        <Icon type="Radius" />
         <Text>圆角规则</Text>
       </div>
       <div className={styles.items}>
-        <Effect />
+        <Icon type="Effect" />
         <Text>效果样式</Text>
       </div>
       <div className={styles.items}>
-        <Type />
+        <Icon type="Type" />
         <Text>字体排版</Text>
       </div>
       <div className={styles.items}>
-        <Layers />
+        <Icon type="Layers" />
         <Text>图层命名</Text>
       </div>
       <div className={styles.items}>
-        <Vocabulary />
+        <Icon type="Vocabulary" />
         <Text>专用词汇</Text>
       </div>
       <div className={styles.items}>
-        <Spelling />
+        <Icon type="Spelling" />
         <Text>语法拼写</Text>
       </div>
       <div className={styles.items}>

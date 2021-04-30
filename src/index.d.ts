@@ -4,7 +4,6 @@ declare namespace NodeJS {
     readonly PUBLIC_URL: string;
   }
 }
-
 declare module '*.avif' {
   const src: string;
   export default src;
