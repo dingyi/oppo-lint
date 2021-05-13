@@ -12,12 +12,12 @@
   "dependencies": {
     "@create-figma-plugin/ui": "latest",
     "@create-figma-plugin/utilities": "latest",
-    "preact": "^10.5.13"
+    "preact": "10.5.13"
   },
   "devDependencies": {
     "@create-figma-plugin/build": "latest",
     "@create-figma-plugin/tsconfig": "latest",
-    "@figma/plugin-typings": "^1.22.0"
+    "@figma/plugin-typings": "1.22.0"
   },
   "files": [
     "src"
