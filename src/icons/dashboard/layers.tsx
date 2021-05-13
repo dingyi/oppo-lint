@@ -1,4 +1,4 @@
-import { createIcon } from './create-icon'
+import { createIcon } from '../create-icon'
 
 const Layers = createIcon(
   'M10 8.5H10.5H17.5H17.7071L17.8536 8.64645L21.8536 12.6464L22 12.7929V13V23V23.5H21.5H10.5H10V23V9V8.5ZM11 9.5V22.5H21V13.5H17.5H17V13V9.5H11ZM18 10.2071L20.2929 12.5H18V10.2071Z'

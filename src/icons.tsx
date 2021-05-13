@@ -8,7 +8,17 @@ import {
   Type,
   Vocabulary,
   Component,
-  Frame
+  Ellipse,
+  Frame,
+  Group,
+  Instance,
+  Line,
+  Polygon,
+  Rectangle,
+  Slice,
+  Star,
+  Union,
+  Vector
 } from './icons/index'
 
 type Props = {
@@ -20,16 +30,19 @@ type Props = {
   | 'Spelling'
   | 'Type'
   | 'Vocabulary'
+  //Figma API datas
   | 'COMPONENT'
+  | 'ELLIPSE'
   | 'FRAME'
   | 'GROUP'
-  | 'STAR'
+  | 'INSTANCE'
   | 'LINE'
-  | 'ELLIPSE'
   | 'POLYGON'
   | 'RECTANGLE'
-  | 'TEXT'
-  | 'VECTOR';
+  | 'SLICE'
+  | 'STAR'
+  | 'UNION'
+  | 'VECTOR'
 }
 
 const Icon = ({ type }: Props) => {
@@ -41,8 +54,19 @@ const Icon = ({ type }: Props) => {
   if (type === 'Type') return <Type />
   if (type === 'Vocabulary') return <Vocabulary />
   if (type === 'COMPONENT') return <Component />
+  if (type === 'ELLIPSE') return <Ellipse />
+  if (type === 'FRAME') return <Frame />
+  if (type === 'GROUP') return <Group />
+  if (type === 'INSTANCE') return <Instance />
+  if (type === 'LINE') return <Line />
+  if (type === 'POLYGON') return <Polygon />
+  if (type === 'RECTANGLE') return <Rectangle />
+  if (type === 'SLICE') return <Slice />
+  if (type === 'STAR') return <Star />
+  if (type === 'UNION') return <Union />
+  if (type === 'VECTOR') return <Vector />
   return (
-    <Effect />
+    null
   )
 }
 

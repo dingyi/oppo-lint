@@ -1,7 +1,0 @@
-import { createIcon } from './create-icon'
-
-const Component = createIcon(
-  'M24 15V12H25V15H28V16H25V24H28V25H25V28H24V25H16V28H15V25H12V24H15V16H12V15H15V12H16V15H24ZM24 16H16V24H24V16Z'
-)
-
-export default Component

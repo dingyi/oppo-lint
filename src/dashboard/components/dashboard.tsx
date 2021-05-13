@@ -7,7 +7,7 @@ import Icon from '../../icons'
 import { h, JSX } from 'preact'
 import styles from './dashboard.css'
 
-export function Dashboard(props: { [key: string]: any }): JSX.Element {
+export function Dashboard(): JSX.Element {
 
   return (
     <div className={styles.container}>
