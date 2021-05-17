@@ -86,8 +86,8 @@ const Node = ({ node, selected, onSelect }: NodeProps) => {
     reset()
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Escape') handleCancel()
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') handleCancel()
   }
 
   useEffect(() => {

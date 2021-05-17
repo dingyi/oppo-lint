@@ -4,6 +4,4 @@ export type Settings = {
   skipLockedLayers: boolean
   smartRenameLayers: boolean
   smartRenameLayersWhitelist: string
-  smartSortLayers: boolean
-  ungroupSingleLayerGroups: boolean
 }
