@@ -1,17 +1,28 @@
 import {
+  Button,
+  Checkbox,
+  Divider,
+  Layer,
+  SearchTextbox,
   Container,
   Text,
   useForm,
   VerticalSpace,
 } from '@create-figma-plugin/ui'
 import Icon from '../../icons'
-//import { emit, on } from '@create-figma-plugin/utilities'
-import { h, JSX } from 'preact'
+import { emit, on } from '@create-figma-plugin/utilities'
+import { Fragment, h, JSX } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 
-function sendToCode<T>(type: string, data?: T) {
-  parent.postMessage({ pluginMessage: { type, data } }, '*')
-}
+import {
+  CloseUIHandler,
+  ComponentNodePlainObject,
+  FormState,
+  NodePlainObject,
+  NameLintProps,
+  SelectionChangedHandler,
+  SubmitHandler
+} from '../utilities/types'
 
 export function NameLint(props: NameLintProps): JSX.Element {
   const [nodes, setNodes] = useState<SceneNode[]>([])
@@ -35,19 +46,33 @@ export function NameLint(props: NameLintProps): JSX.Element {
   }, [])
 
   return (
-    <Container space="medium">
-      <VerticalSpace space="large" />
-      <Text muted>Choose a layer and double click to rename it.</Text>
-      <VerticalSpace space="large" />
-      {nodes.map(node => (
-        <Node
-          key={node.id}
-          node={node}
-          selected={node.id === selectedNodeId}
-          onSelect={() => handleSelect(node.id)}
-        />
-      ))}
-    </Container>
+    <Fragment>
+      <Container space="medium">
+        <VerticalSpace space="medium" />
+        <Text muted>Choose a layer and double click to rename it.</Text>
+        <VerticalSpace space="medium" />
+        {nodes.map(node => (
+          <Node
+            key={node.id}
+            node={node}
+            selected={node.id === selectedNodeId}
+            onSelect={() => handleSelect(node.id)}
+          />
+        ))}
+        <Checkbox
+          name="shouldResizeToFitNode"
+          onValueChange={setFormState}
+          value={SelectAll}
+        >
+          <Text>Select all layers</Text>
+        </Checkbox>
+        <VerticalSpace space="medium" />
+        <Button disabled={disabled === true} fullWidth onClick={handleSubmit}>
+          Replace With Default Names
+        </Button>
+        <VerticalSpace space="small" />
+      </Container>
+    </Fragment>
   )
 }
 
