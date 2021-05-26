@@ -10,21 +10,21 @@
   "license": "MIT",
   "author": "dingyi",
   "dependencies": {
-    "@create-figma-plugin/ui": "latest",
-    "@create-figma-plugin/utilities": "latest",
+    "@create-figma-plugin/ui": "^1.0.1",
+    "@create-figma-plugin/utilities": "^1.0.1",
     "preact": "10.5.13"
   },
   "devDependencies": {
-    "@create-figma-plugin/build": "latest",
-    "@create-figma-plugin/tsconfig": "latest",
+    "@create-figma-plugin/build": "^1.0.1",
+    "@create-figma-plugin/tsconfig": "^1.0.1",
     "@figma/plugin-typings": "1.22.0"
   },
   "files": [
     "src"
   ],
   "scripts": {
-    "build": "build-figma-plugin",
-    "watch": "build-figma-plugin --watch",
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch",
     "clean": "rimraf '*.log' build manifest.json 'src/**/*.scss.d.ts'",
     "fix": "eslint --fix 'src/**/*.{ts,tsx}' && prettier --loglevel error --write package.json tsconfig.json",
     "lint": "eslint 'src/**/*.{ts,tsx}'"
