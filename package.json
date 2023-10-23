@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@create-figma-plugin/build": "^1.0.1",
-    "@create-figma-plugin/tsconfig": "^1.0.1",
+    "@create-figma-plugin/tsconfig": "^3.0.0",
     "@figma/plugin-typings": "1.23.0"
   },
   "files": [
