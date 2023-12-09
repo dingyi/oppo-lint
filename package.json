@@ -11,7 +11,7 @@
   "author": "dingyi",
   "dependencies": {
     "@create-figma-plugin/ui": "^1.0.1",
-    "@create-figma-plugin/utilities": "1.1.1",
+    "@create-figma-plugin/utilities": "3.1.0",
     "preact": "10.5.13"
   },
   "devDependencies": {
